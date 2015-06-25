@@ -243,10 +243,8 @@ list: () => {
             return
 }
 list.fetch()
-React.render( < ListView data = {
-    list
-    }
-    />, document.querySelector('.container'))
+React.render(<ListView data = {
+    list} />document.querySelector('.container'))
         },
 login: () => {
     if (Parse.User.current()) {
